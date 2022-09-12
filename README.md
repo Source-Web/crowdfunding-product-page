@@ -75,8 +75,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Crowdfunding Product Page](https://www.frontendmentor.io/solutions/responsive-tip-calculator-designed-with-pure-html-css-and-javascript-eC8NdLaDFD)
-- Live Site URL: [Crowdfunding Product Page](https://source-web.github.io/tip-calculator/)
+- Solution URL: [Crowdfunding Product Page](https://www.frontendmentor.io/solutions/functional-and-responsive-crowdfunding-product-page-with-vanilla-js-01LPD9AZHe)
+- Live Site URL: [Crowdfunding Product Page](https://source-web.github.io/crowdfunding-product-page/)
 
 ## My process
 

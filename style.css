@@ -39,6 +39,7 @@ h1,
 h2,
 .h2,
 h3,
+.h3,
 span {
     margin: 0;
     padding: 0;
@@ -51,15 +52,18 @@ body {
 }
 
 h1,
+.h1,
 h2,
 .h2,
 h3,
+.h3,
 .progressValue {
     font-weight: var(--fw-bolder);
     color: var(--clr-Black);
 }
 
-h1 {
+h1,
+.h1 {
     font-size: var(--fs-h1);
 }
 
@@ -68,7 +72,8 @@ h2,
     font-size: var(--fs-h2);
 }
 
-h3 {
+h3,
+.h3 {
     font-size: var(--fs-p);
 }
 
@@ -114,6 +119,16 @@ img {
 input {
     font: inherit;
     outline: none;
+}
+
+.visuallyHidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
 }
 
 /*Header*/
@@ -211,8 +226,9 @@ main {
     left: calc(50% - 30px);
 }
 
-.mastercraftMain h1 {
+.mastercraftMain .h1 {
     margin: 15px 5px 17px;
+    display: inline-block;
 }
 
 .amp {
@@ -227,15 +243,14 @@ main {
     margin-top: 22px;
 }
 
-.cta a {
+.cta #backProject {
     font-size: var(--fs-a);
     padding: 18.5px 42px;
 }
 
 #bookmark {
     background: none;
-    border: none;
-    outline: none;
+    padding: 0;
 }
 
 #bookmark label {
@@ -441,7 +456,7 @@ form .section3 p {
     font-size: var(--fs-p);
 }
 
-label[for="pledgeInput"] {
+.pledgeInput label {
     color: var(--clr-Dark-gray);
     text-align: center;
 }
@@ -557,9 +572,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media only screen and (max-width: 384px) {
-    .cta a {
-        padding: 18.5px 0;
-        width: 80%;
+    .cta #backProject {
+        width: 70%;
+        padding: 18.5px 5%;
     }
 
     .input a {
@@ -690,7 +705,7 @@ input::-webkit-inner-spin-button {
         padding: 46px 47px;
     }
 
-    .mastercraftMain h1 {
+    .mastercraftMain .h1 {
         margin: 8px 0 11px;
     }
 
@@ -740,7 +755,7 @@ input::-webkit-inner-spin-button {
         align-items: center;
         justify-content: flex-start;
         gap: 46px;
-        margin-bottom: 33px;
+        margin-bottom: 31px;
         text-align: left;
     }
 
@@ -907,7 +922,7 @@ input::-webkit-inner-spin-button {
         padding: 29px 71px 0;
     }
 
-    label[for="pledgeInput"] {
+    .pledgeInput label {
         text-align: left;
     }
 
@@ -920,4 +935,10 @@ input::-webkit-inner-spin-button {
         margin-left: 5px;
     }
 
+}
+
+@media only screen and (min-width: 1000px) {
+    .nav {
+        padding: 48px 165px;
+    }
 }

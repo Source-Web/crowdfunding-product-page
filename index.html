@@ -39,19 +39,22 @@
 
   <main>
     <section>
+      <h1 class="visuallyHidden">This is the official Crowdfunding Product Page</h1>
       <section class="mastercraftMain section">
+        <h2 class="visuallyHidden">Mastercraft Intro Section</h2>
         <img src="./images/logo-mastercraft.svg" alt="Mastercraft logo" class="mastercraftlogo">
-        <h1>Mastercraft Bamboo Monitor Riser</h1>
+        <label class="h1">Mastercraft Bamboo Monitor Riser</label>
         <p>A beautiful<span class="nbsp">ly</span><span class="amp">&nbsp; &amp;</span> handcrafted monitor stand to
           reduce neck and eye strain.</p>
         <div class="cta">
           <a href="#modal" aria-label="Click to back this project" id="backProject">Back this project</a>
-          <button id="bookmark"><img src="./images/icon-bookmark.svg" alt="Bookmark image">
-            <label>Bookmark</label></button>
+          <a id="bookmark"><img src="./images/icon-bookmark.svg" alt="Bookmark image">
+            <label>Bookmark</label></a>
         </div>
       </section>
 
       <section class="progress section">
+        <h2 class="visuallyHidden">Progress Section</h2>
         <div>
           <div>
             <span class="progressValue" data-val="89914" id="backed">$0</span>
@@ -162,7 +165,7 @@
                   <input type="radio" name="pledge">
                 </div>
                 <span>
-                  <h3>Bamboo Stand</h3>
+                  <label class="h3">Bamboo Stand</label>
                   <small>Pledge $25 or more</small>
                 </span>
               </div>
@@ -175,7 +178,7 @@
             <span class="p"><label class="h2 bambooLeft">101</label>left</span>
             <!-- Selected pledge start -->
             <div class="pledgeInput" id="inputBamboo">
-              <label for="pledgeInput">Enter your pledge</label>
+              <label>Enter your pledge</label>
               <div class="input">
                 <div>
                   <input type="number" value="25" id="bambooVal">
@@ -193,7 +196,7 @@
                   <input type="radio" name="pledge">
                 </div>
                 <span>
-                  <h3>Black Edition Stand</h3>
+                  <label class="h3">Black Edition Stand</label>
                   <small>Pledge $75 or more</small>
                 </span>
               </div>
@@ -207,7 +210,7 @@
             <span class="p"><label class="h2 blackLeft">64</label>left</span>
             <!-- Selected pledge start -->
             <div class="pledgeInput" id="inputBlack">
-              <label for="pledgeInput">Enter your pledge</label>
+              <label>Enter your pledge</label>
               <div class="input">
                 <div>
                   <input type="number" value="75" id="blackVal">
@@ -226,7 +229,7 @@
                   <input type="radio" name="pledge" disabled>
                 </div>
                 <span>
-                  <h3>Mahogany Special Edition</h3>
+                  <label class="h3">Mahogany Special Edition</label>
                   <small>Pledge $200 or more</small>
                 </span>
               </div>
@@ -240,7 +243,7 @@
             <span class="p"><label class="h2">0</label>left</span>
             <!-- Selected pledge start -->
             <div class="pledgeInput" id="inputMahogany">
-              <label for="pledgeInput">Enter your pledge</label>
+              <label>Enter your pledge</label>
               <div class="input">
                 <div>
                   <input type="number" value="200">
@@ -265,8 +268,12 @@
       </section>
       <!-- Success modal end -->
 
-      <section class="backDrop open" id="backDrop"></section>
-      <section class="backDrop2 open" id="backDrop2"></section>
+      <section class="backDrop open" id="backDrop">
+        <h2 class="visuallyHidden">Backdrop Overlay</h2>
+      </section>
+      <section class="backDrop2 open" id="backDrop2">
+        <h2 class="visuallyHidden">Backdrop Overlay</h2>
+      </section>
     </section>
   </main>
 
